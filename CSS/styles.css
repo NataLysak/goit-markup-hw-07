@@ -80,7 +80,7 @@ img{
     
 .header-nav{margin-left: 93px;
 }
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 .site-nav .link{ 
@@ -281,7 +281,7 @@ img{
 .modal-form {
   display: block;
 }
-.title-modal {
+.modal-form__title {
   font-size: 20px;
   text-align: center;
   color: var(--text-header-color);
@@ -294,7 +294,7 @@ img{
   letter-spacing: 0.01em;
   color: var(--active-color);
 }
-.form-lable {
+.modal-form__list {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -306,7 +306,7 @@ img{
   margin-bottom: 10px;
 }
 
-.modal-position-icon {
+.modal-form__icon {
   position: relative;
 }
 .modal-icon {
@@ -317,7 +317,7 @@ img{
   transition: fill var(--anim-fast);
 }
 
-.form-input {
+.modal-form__input {
   display: block;
   width: 100%;
   height: 40px;
@@ -359,28 +359,25 @@ textarea::placeholder {
   color: var(--active-color);
   margin-bottom: 4px;
 }
-.label-comment {
-  display: block;
-  margin-bottom: 20px;
-}
-.comment {
+
+.modal-form__comment {
   border: 1px solid #21212133;
   border-radius: 4px;
   transition: border var(--anim-fast);
 }
-.form-checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
-.checkbox-title {
+.checkbox__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--active-color);
 }
-.checkbox-icon {
+.checkbox__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -517,15 +514,15 @@ textarea::placeholder {
 
 }
 
-.advantages .part{
+.advantages .studia-list{
     width: 270px;
    
 }
-.advantages .part:not(:last-child){
+.advantages .studia-list:not(:last-child){
     margin-right: 30px;
 }
 
-.feature{
+.studia-list__item{
     display: flex;
     width: 270px;
     height: 120px;
@@ -554,7 +551,7 @@ textarea::placeholder {
     clip-path: inset(100%);
  }
 
-.advantages-title{
+.studia-list__title{
   
     margin-bottom: 10px;
     color: var(--text-header-color);
@@ -564,7 +561,7 @@ textarea::placeholder {
 }
     
 
-.advantages-text{
+.studia-list__text{
     line-height: 1.71; 
     display: inline-block;
     }
@@ -587,9 +584,9 @@ textarea::placeholder {
     display: flex;
     }
 
-.services-wrapper:not(:nth-child(3n)){margin-right: 30px;}
+.services__wrapper:not(:nth-child(3n)){margin-right: 30px;}
 
-.services-wrapper{
+.services__wrapper{
     position: relative;
     display: flex;
 
@@ -630,19 +627,19 @@ textarea::placeholder {
     background-color:var(--portfolio-btn-color);
 }
 
-.team-members{
+.team__members{
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
     }
-.team-members:not(:nth-child(4n)) {
+.team__members:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 .team-post{
     padding: 30px 0px;
 }
-.name{
+.team__name{
     margin-bottom: 10px;
     color: var(--text-header-color);
 
@@ -652,7 +649,7 @@ textarea::placeholder {
     text-align: center;
 }
 
-.post{
+.team__post{
     font-size: 16px;
     line-height: 1.19x;
     text-align: center;
@@ -690,7 +687,7 @@ textarea::placeholder {
     background-color: var(--accent-color);}
 
 /* Постоянные клиенты */
-.icon{
+.clients{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,7 +711,7 @@ textarea::placeholder {
 
 }
 
-.icon-logo{
+.clients__icon-logo{
     fill: currentColor;
 
 }
@@ -725,7 +722,7 @@ textarea::placeholder {
     color: var(--accent-color);
 }
 
-.client:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -896,11 +893,11 @@ textarea::placeholder {
 .footer-contact:hover {
     color: var(--accent-color)
 }
-.footer-item{
+.footer-list__item{
     display: block;
     margin-bottom: 9px;
 }
-.footer-item:last-child {
+.footer-list__item:last-child {
     margin-bottom: 0;
 }
 .contact {
