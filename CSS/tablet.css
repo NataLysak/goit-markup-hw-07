@@ -1,0 +1,110 @@
+ @media screen and (min-width: 768px) 
+    {
+.container{max-width: 768px;}
+
+.logo-hed-tabl{padding: 26px 0px;
+        margin-right: 88px;}
+
+.mobile-menu-btn{
+        display: none;}
+.mobile-menu{
+        display: none;}
+        
+.header-nav {
+    display:block;
+    margin-right: 90px;}
+
+.header-group{ 
+    display:block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: auto;  
+
+}
+.header-group:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header-contact{
+    display: flex;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;    
+    
+    color:currentColor;
+    }
+
+.contact-svg-mailto{
+    fill: currentColor;  
+    margin-right: 8px; 
+     
+}
+.contact-svg-tel{
+    fill: currentColor;    
+    margin-right: 8px;  
+    
+}
+.header-contact:not(:last-child) {
+  margin-bottom: 10px;}
+
+ /* ---Hero--- */
+.overlay {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/Hero/Header-tab\ img.jpg);}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/Hero/Header\ img\ -tabl-2x.jpg);}
+}
+.hero-title{
+   line-height: 1.36;
+}
+
+ /* <!-- Наші переваги --> */
+    .part{max-width: 354px;}
+    .team-members{max-width: 354px;
+    }
+    .client{max-width: 226px;}
+     /* flex-basis: calc((100%-60px)/3);} */
+
+    .advantages-title{
+       text-align: left;}
+}
+        
+    /* =========== FOOTER========= */
+@media screen and (min-width: 768px) and (max-width: 1199px){ 
+    .footer {
+   width: 768px;}
+
+.footer-logo { padding: 0;
+}
+.footer-block-cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+     
+    }
+.footer-form-div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+.footer-form-fild{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Модальное окно */
+
+}
+        
+
+ 
+    
