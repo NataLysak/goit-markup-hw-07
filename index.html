@@ -35,8 +35,8 @@
         <div class="container header-container">
             <a class="logo logo-hed-tabl link" href="./index.html">Web<span class="logo-header">Studio</span></a>
     <!-- Кнопка мобільного меню -->
-            <button class="mobile-menu-btn" type="button" data-menu-open> 
-                <svg class="mobile-menu-svg" width="32" height="22" aria-label="перемикач мобільного меню">
+            <button class="mobile-menu-btn is-open" type="button" data-menu-open> 
+                <svg class="mobile-menu-svg" width="24" height="16" aria-label="перемикач мобільного меню">
                     <use class="mobile-menu-icon" href="./images/icons.svg#icon-menu-svg">
                     </use>
                 </svg>
@@ -50,7 +50,7 @@
                 </ul>
             </nav>
             <div class="header-group">
-                <a class="header-contact item link" href="mailto:info@devstudio.com"> 
+                <a class="header-contact header-contact-mailto item link" href="mailto:info@devstudio.com"> 
                     <svg class="contact-svg-mailto" width="14" height="10">
                     <use href="./images/icons.svg#icon-envelope">
                     </use>
@@ -65,7 +65,7 @@
             </div>
         </div>
     <!-- Мобільне вікно меню -->
-    <div class="mobile-menu is-open" data-menu>
+    <div class="mobile-menu is-hidden" data-menu>
         <div class="container"> 
             <div class="mob-menu">
             <button class="mobile-menu-close" type="button" data-menu-close>
@@ -229,16 +229,19 @@
                         <img class="services-img" 
                         src="./images/Главная/img1.jpg" 
                         alt="Анализ и аудит" 
-                        srcset="./images/Главная/img1.jpg 1x, ./images/Главная/img1-2x.jpg 2x"
-                        width=370
-                            height="294">
+                        srcset="
+                        ./images/Главная/img1.jpg 1x, 
+                        ./images/Главная/img1-2x.jpg 2x"
+                        width=370  height="294">
                             <p class="description">Десктопні додатки</p>
                     </li>
                     <li class="services-wrapper">
                             <img class="services-img" 
                             src="./images/Главная/img2.jpg" 
                             alt="Настройка рекламы" 
-                            srcset="./images/Главная/img2.jpg 1x, ./images/Главная/img2-2x.jpg 2x"
+                            srcset="
+                            ./images/Главная/img2.jpg 1x, 
+                            ./images/Главная/img2-2x.jpg 2x"
                             width=370
                             height="294">
                             <p class="description">Мобільні додатки</p>
@@ -247,9 +250,10 @@
                         <img class="services-img" 
                         src="./images/Главная/img3.jpg" 
                         alt="Разработка веб-сайта" 
-                        srcset="./images/Главная/img3.jpg 1x, ./images/Главная/img3-2x.jpg 2x"
-                        width=370
-                            height="294">
+                        srcset="
+                        ./images/Главная/img3.jpg 1x, 
+                        ./images/Главная/img3-2x.jpg 2x"
+                        width=370 height="294">
                             <p class="description">Дизайнерські рішення</p>
                     </li>
                 </ul>
@@ -261,11 +265,17 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team list">
                     <li class="team-members"><img  
-                        src="./images/Главная/img4.jpg" 
+                        src="./images/Главная/img1-mob-1.jpg" 
                         alt="Игорь Демьяненко" 
-                        srcset="./images/Главная/img4.jpg 1x, ./images/Главная/members 1 -2x.jpg 2x"
-                        width="270"
-                            height="260">
+                        srcset="
+                        ./images/Главная/img1-mob-1.jpg 1x 450w, 
+                        ./images/Главная/img1-mob-2.jpg 2x 900w, 
+                        ./images/Главная/img1-tab-1.jpg 1x 354w, 
+                        ./images/Главная/img1-tab-2.jpg 2x 708w, 
+                        ./images/Главная/img1-deck-1.jpg 1x 270w, 
+                        ./images/Главная/img1-deck-2.jpg 2x 540w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        width="450" height="460">
                         <div class="team-post">
                             <h3 class="name">Ігор Дем'яненко</h3>
                             <p class="post" lang="en">Product Designer</p>
@@ -303,11 +313,17 @@
                         </div>
                     </li>
                     <li class="team-members"><img 
-                        src="./images/Главная/img5.jpg" 
+                        src="./images/Главная/img2-mob-1.jpg" 
                         alt="Ольга Репина" 
-                        srcset="./images/Главная/img5.jpg 1x, ./images/Главная/members 2 -2x.jpg 2x"
-                        width="270" 
-                            height="260">
+                        srcset="
+                        ./images/Главная/img2-mob-1.jpg 1x 450w, 
+                        ./images/Главная/img2-mob-2.jpg 2x 900w,
+                        ./images/Главная/img2-tab-1.jpg 1x 354w,
+                        ./images/Главная/img2-tab-2.jpg 2x 708w,
+                        ./images/Главная/img2-deck-1.jpg 1x 270w, 
+                        ./images/Главная/img2-deck-2.jpg 2x 540w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        width="450" height="460">
                         <div class="team-post">
                             <h3 class="name">Ольга Репіна</h3>
                             <p class="post" lang="en">Frontend Developer</p>
@@ -348,11 +364,18 @@
                         </div>
                     </li>
                     <li class="team-members"><img 
-                        src="./images/Главная/img6.jpg" 
+                        src="./images/Главная/img3-mob-1.jpg" 
                         alt="Николай Тарасов" 
-                        srcset="./images/Главная/img6.jpg 1x, ./images/Главная/members 3 -2x.jpg 2x"
-                        width="270"
-                            height="260">
+                        srcset="
+                        ./images/Главная/img3-mob-1.jpg 1x 450w, 
+                        ./images/Главная/img3-mob-2.jpg 2x 900w,
+                        ./images/Главная/img3-tab-1.jpg 1x 354w,
+                        ./images/Главная/img3-tab-2.jpg 2x 708w,
+                        ./images/Главная/img3-deck-1.jpg 1x 270w, 
+                        ./images/Главная/img3-deck-2.jpg 2x 540w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        width="450" height="460">
+                        
                         <div class="team-post">
                             <h3 class="name">Микола Тарасов</h3>
                             <p class="post" lang="en">Marketing</p>
@@ -393,11 +416,17 @@
                         </div>
                     </li>
                     <li class="team-members"><img 
-                        src="./images/Главная/img7.jpg" 
+                        src="./images/Главная/img4-mob-1.jpg" 
                         alt="Михаил Ермаков" 
-                        srcset="./images/Главная/img7.jpg 1x, ./images/Главная/members 4 -2x.jpg 2x"
-                        width="270"
-                            height="260">
+                        srcset="
+                        ./images/Главная/img4-mob-1.jpg 1x 450w, 
+                        ./images/Главная/img4-mob-2.jpg 2x 900w,
+                        ./images/Главная/img4-tab-1.jpg 1x 354w,
+                        ./images/Главная/img4-tab-2.jpg 2x 708w,
+                        ./images/Главная/img4-deck-1.jpg 1x 270w, 
+                        ./images/Главная/img4-deck-2.jpg 2x 540w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        width="450" height="460">
                         <div class="team-post">
                             <h3 class="name">Михайло Єрмаков</h3>
                             <p class="post" lang="en">UI Designer</p>

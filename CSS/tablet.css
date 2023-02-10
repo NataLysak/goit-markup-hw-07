@@ -12,7 +12,7 @@
         
 .header-nav {
     display:block;
-    margin-right: 90px;}
+    }
 
 .header-group{ 
     display:block;
@@ -71,7 +71,7 @@
     .team-members{max-width: 354px;
     }
     .client{max-width: 226px;}
-     /* flex-basis: calc((100%-60px)/3);} */
+     
 
     .advantages-title{
        text-align: left;}
@@ -87,7 +87,7 @@
 .footer-block-cont{
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: baseline;
      
     }
 .footer-form-div{
