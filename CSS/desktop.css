@@ -1,115 +1,124 @@
- @media screen and (min-width: 1200px) {
-.container{
+@media screen and (min-width: 1200px) {
+  .container {
     max-width: 1200px;
-}
+  }
 
-.section{padding: 94px 0px;
-}
-.logo{
-        padding-top: 24px;
-        padding-bottom: 25px;
-        font-size: 26px;
-        line-height: 0.04;
-        margin-right: 93px;}
+  .section {
+    padding: 94px 0px;
+  }
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 0.04;
+    margin-right: 93px;
+  }
 
-.mobile-menu-btn{
-        display: none;}
-.mobile-menu{
-        display: none;}
+  .mobile-menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
 
-.header-group{ 
+  .header-group {
     display: flex;
     margin-left: auto;
-   
-    
-}
-.header-group .item + .item{
-    margin-left: 50px; 
-    }
+  }
+  .header-group .item + .item {
+    margin-left: 50px;
+  }
 
-.header-contact{
-    display: flex;  
+  .header-contact {
+    display: flex;
     font-size: 14px;
     line-height: 1.14;
 
     transition: color var(--anim-fast);
-    
-    }
-.header-contact:not(:last-child) {
-  margin-bottom: 0px;}
- 
-.contact-svg-mailto{
-       width: 16px;
-       height: 12px;
-       margin-right: 10px;
-      
+  }
+  .header-contact:not(:last-child) {
+    margin-bottom: 0px;
+  }
 
-}
-.contact-svg-tel{
+  .contact-svg-mailto {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .contact-svg-tel {
     height: 16px;
     margin-right: 10px;
- }
+  }
 
-.header-contact:hover, 
-.header-contact:focus, 
-.header-contact:active {color: var(--accent-color);}
+  .header-contact:hover,
+  .header-contact:focus,
+  .header-contact:active {
+    color: var(--accent-color);
+  }
 
-/* Hero */
+  /* Hero */
 
-.hero{
+  .hero {
     padding: 200px 0px;
-}
-   
-.overlay {
+  }
+
+  .overlay {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../images/Hero/Img\ \(1\).jpg);}
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero/Img\\(1\).jpg);
+  }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url(../images/Hero/Img-desktop-2.jpg);}
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/Hero/Img-desktop-2.jpg);
+    }
+  }
 
-.hero-title{
+  .hero-title {
     font-size: 44px;
     line-height: 1.36;
 
-    max-width: 696px; 
-}
+    max-width: 696px;
+  }
 
-/* Чем мы занимаемся */
+  /* Чем мы занимаемся */
 
-.offer{
+  .offer {
     display: block;
     padding-top: 0px;
-    padding-bottom: 94px;}
-    
-.title{ 
+    padding-bottom: 94px;
+  }
+
+  .title {
     font-size: 36px;
     line-height: 1.16;
-    
+
     margin-bottom: 50px;
-    }
-    
-.services{
+  }
+
+  .services {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    }
+  }
 
-.services-wrapper{
+  .services-wrapper {
     position: relative;
     display: flex;
-}
+  }
 
-.services-img{
-    display: block; 
-}
+  .services-img {
+    display: block;
+  }
 
-.description{
+  .description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,115 +133,109 @@
     text-align: center;
     text-transform: uppercase;
 
-    color:var(--background-color);
+    color: var(--background-color);
     background-color: rgba(1, 2, 15, 0.8);
+  }
+  /* <!-- Наші переваги --> */
+  .part {
+    max-width: 270px;
+  }
 
-}
-/* <!-- Наші переваги --> */
-    .part{max-width: 270px;
-    }
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .team-members {
+    max-width: 270px;
+  }
+  .client {
+    max-width: 170px;
+  }
 
-    .title{
-        margin-bottom: 50px;
-        font-size: 36px;} 
-    .team-members{max-width: 270px;}
-    .client{max-width: 170px;}
-     
-    
-    .portfolio{
-        padding-top: 94px;
-        padding-bottom: 94px;}
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
+  /* =========== FOOTER========= */
 
-/* =========== FOOTER========= */
-
-.footer-logo {
+  .footer-logo {
     font-size: 26px;
     margin-bottom: 28px;
     padding: 0px 0px;
-    
-}
-.footer-list{
-    display: block; 
+  }
+  .footer-list {
+    display: block;
     align-items: baseline;
-    }
-.footer-address{
+  }
+  .footer-address {
     justify-content: flex-start;
-    text-align:left;
+    text-align: left;
     gap: 12px;
-    
-}
+  }
 
-.footer-item{
+  .footer-item {
     margin-bottom: 9px;
-}
-.footer-item:last-child {
+  }
+  .footer-item:last-child {
     margin-bottom: 0;
-}
+  }
 
-.inviting-div{
+  .inviting-div {
     align-content: flex-start;
     align-items: flex-start;
-   
-    
-}
-.inviting-title{
+  }
+  .inviting-title {
     font-weight: 700;
     width: 145px;
-
-} 
-.footer-block-cont{
+  }
+  .footer-block-cont {
     display: flex;
-}
-.footer-subscribe {
-  width: 358px;
-  margin-right: 12px;}
+  }
+  .footer-subscribe {
+    width: 358px;
+    margin-right: 12px;
+  }
 
-
-
-.footer .container{    
+  .footer .container {
     display: flex;
     align-items: baseline;
-}
-.footer-block{
+  }
+  .footer-block {
     margin-right: 70px;
-}
+  }
 
-.footer-block:last-child{margin-right: 0px;}
+  .footer-block:last-child {
+    margin-right: 0px;
+  }
 
-.footer-form-div{
+  .footer-form-div {
     flex-wrap: wrap;
     margin-left: auto;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-form-fild {
+    gap: 0px;
+  }
 
-}
-.footer-form {
-  display: flex;
-  
-}
-.footer-form-fild {
-gap: 0px;
-
-}
-
-.title-subscribe {
-
-  margin-bottom: 20px;
-}
-.title-subscribe{
+  .title-subscribe {
+    margin-bottom: 20px;
+  }
+  .title-subscribe {
     text-align: left;
-}
+  }
 
-.footer-subscribe {
-  width: 358px;
- 
-}
-/* Модальное окно */
+  .footer-subscribe {
+    width: 358px;
+  }
+  /* Модальное окно */
   .modal {
     width: 528px;
     height: 581px;
- 
   }
-  .checkbox-title{
+  .checkbox-title {
     font-size: 14px;
   }
- }
+}

@@ -65,6 +65,8 @@
 .hero-title{
    line-height: 1.36;
 }
+.modal{
+        overflow:hidden}
 
  /* <!-- Наші переваги --> */
     .part{max-width: 354px;}
